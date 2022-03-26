@@ -77,7 +77,15 @@ button, input {
 /* Header */
 
 .header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+
     padding: 4rem 11rem 4rem 8rem;
+
+    z-index: 10;
 }
 
 .header__wrap {
@@ -116,6 +124,22 @@ button, input {
 }
 
 /* Hero */
+
+.hero {
+    padding-top: 27rem;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
 .hero__title {
     max-width: 740px;
