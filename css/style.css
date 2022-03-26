@@ -74,6 +74,11 @@ button, input {
     background: var(--red-gradient);
 }
 
+.btn--transparent {
+    border: 1px solid #FFFFFF;
+    background: none;
+}
+
 /* Header */
 
 .header {
@@ -275,4 +280,53 @@ button, input {
     padding-bottom: 10rem;
 }
 
+.team__title {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 140%;
+    margin-bottom: 11.3rem;
+}
+
+.team__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team__item {
+    max-width: 41.6rem;
+    width: 41.6rem;
+}
+
+.team__item:not(:last-child) {
+    margin-right: 2.4rem;
+}
+
+.specialist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.specialist__pic {
+    display: block;
+    max-width: 19rem;
+    margin-bottom: 4rem;
+}
+
+.specialist__name {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 140%;
+    margin-bottom: 1.5rem;
+}
+
+.specialist__role {
+    font-size: 1.6rem;
+    line-height: 160%;
+    opacity: 0.8;
+    margin-bottom: 3rem;
+}
+
 /* Закажите свою сборку */
+
+/* Футер с иконками соцсетей */
