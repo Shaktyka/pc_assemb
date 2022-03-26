@@ -28,7 +28,7 @@ img {
     flex-shrink: 0;
 }
 
-ul {
+ol, ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -60,6 +60,10 @@ button, input {
 
     font-size: 1.6rem;
     line-height: 150%;
+}
+
+.btn--red {
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
 }
 
 /* Header */
@@ -102,3 +106,53 @@ button, input {
     font-size: 1.6rem;
     line-height: 150%;
 }
+
+/* Hero */
+
+.hero__title {
+    max-width: 740px;
+    font-weight: 700;
+    font-size: 6.4rem;
+    line-height: 140%;
+    margin-bottom: 5rem;
+}
+
+.hero__timer {
+    margin-bottom: 7.6rem;
+}
+
+.timer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.timer__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 10.8rem;
+    padding: 2rem 3rem;
+    background-color: #121212;
+}
+
+.timer__item:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.timer__amount {
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 140%;
+}
+
+.timer__unit {
+    font-size: 1.6rem;
+    line-height: 140%;
+    opacity: 0.4;
+}
+
+.hero .request {
+    display: inline-block;
+}
+
+
