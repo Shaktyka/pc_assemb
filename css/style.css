@@ -353,5 +353,49 @@ button, input {
     margin-bottom: 4.5rem;
 }
 
-
 /* Футер с иконками соцсетей */
+
+.footer {
+    padding-top: 4.8rem;
+    padding-bottom: 24.42rem;
+}
+.footer .container {
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social__item:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 5rem;
+    max-height: 5rem;
+    width: 5rem;
+    height: 5rem;
+
+    padding: 1.3rem;
+    background: var(--violet-gradient);
+    border-radius: 5rem;
+}
+
+.social__link img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
