@@ -187,4 +187,40 @@ button, input {
     display: inline-block;
 }
 
+/* Чем мы занимаемся */
 
+.about {
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+}
+
+.about .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__img-wrap {
+    width: 52.6rem;
+    height: 54.2rem;
+    margin-right: 13.9rem;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 140%;
+    margin-bottom: 4.5rem;
+}
+
+.about__text {
+    max-width: 63.6rem;
+    font-size: 1.6rem;
+    line-height: 160%;
+}
+
+/* Процесс работы */
+
+/* Наша команда */
+
+/* Закажите свою сборку */
