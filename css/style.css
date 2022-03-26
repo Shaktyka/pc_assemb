@@ -1,3 +1,11 @@
+:root {
+    --white: #ffffff;
+    --black-gradient: linear-gradient(to right top, #060606, #050504, #030303, #020201, #000000);
+    --violet-gradient: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    --red-gradient: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    --dark-gray: #121212;
+}
+
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -9,11 +17,11 @@ html, body {
 
     font-family: "Roboto", sans-serif;
     font-style: normal;
-    color: white;
+    color: var(--white);
     font-weight: 400;
     font-size: 62.5%;
     
-    background-image: linear-gradient(to right top, #060606, #050504, #030303, #020201, #000000);
+    background-image: var(--black-gradient);
 }
 
 .container {
@@ -55,7 +63,7 @@ button, input {
     justify-content: center;
     align-items: center;
     padding: 1rem 3rem;
-    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    background: var(--violet-gradient);
     border-radius: 5rem;
 
     font-size: 1.6rem;
@@ -63,7 +71,7 @@ button, input {
 }
 
 .btn--red {
-    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    background: var(--red-gradient);
 }
 
 /* Header */
@@ -132,7 +140,7 @@ button, input {
     align-items: center;
     min-width: 10.8rem;
     padding: 2rem 3rem;
-    background-color: #121212;
+    background-color: var(--dark-gray);
 }
 
 .timer__item:not(:last-child) {
