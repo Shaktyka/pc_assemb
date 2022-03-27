@@ -1,32 +1,32 @@
 @font-face {
     font-family: 'Roboto';
-    src: url('fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot');
     src: local('Roboto'), local('Roboto-Regular'),
-        url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Roboto-Regular.woff') format('woff'),
-        url('fonts/Roboto-Regular.ttf') format('truetype');
+        url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('fonts/Roboto-Medium.eot');
+    src: url('../fonts/Roboto-Medium.eot');
     src: local('Roboto Medium'), local('Roboto-Medium'),
-        url('fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Roboto-Medium.woff') format('woff'),
-        url('fonts/Roboto-Medium.ttf') format('truetype');
+        url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Medium.woff') format('woff'),
+        url('../fonts/Roboto-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('fonts/Roboto-Bold.eot');
+    src: url('../fonts/Roboto-Bold.eot');
     src: local('Roboto Bold'), local('Roboto-Bold'),
-        url('fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Roboto-Bold.woff') format('woff'),
-        url('fonts/Roboto-Bold.ttf') format('truetype');
+        url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Bold.woff') format('woff'),
+        url('../fonts/Roboto-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -37,6 +37,7 @@
     --violet-gradient: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
     --red-gradient: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
     --dark-gray: #121212;
+    --modal-bg: #2C2C2C;
 }
 
 *, *::after, *::before {
@@ -101,6 +102,7 @@ button, input {
 
     font-size: 1.6rem;
     line-height: 150%;
+    color: var(--white);
 }
 
 .btn--red {
@@ -110,6 +112,20 @@ button, input {
 .btn--transparent {
     border: 1px solid #FFFFFF;
     background: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+        clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /* Header */
@@ -305,10 +321,6 @@ button, input {
     width: 30.6rem;
 }
 
-/* .steps__item:not(:last-child) {
-    margin-right: 1.8rem;
-} */
-
 .steps__title {
     position: relative;
     font-weight: 700;
@@ -343,10 +355,21 @@ button, input {
 }
 
 .team__title {
+    display: flex;
+    align-items: flex-end;
     font-weight: 700;
     font-size: 4.8rem;
     line-height: 140%;
     margin-bottom: 11.3rem;
+}
+
+.team__img {
+    position: relative;
+    left: -1.5rem;
+    bottom: -1rem;
+    width: 9.1rem;
+    height: auto;
+    transform: rotate(-45deg);
 }
 
 .team__list {
@@ -461,3 +484,69 @@ button, input {
     height: 2.4rem;
 }
 
+/* Модалка */
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70rem;
+    padding: 9rem 9.4rem;
+    background-color: var(--modal-bg);
+}
+
+.show {
+    display: block;
+    z-index: 11;
+}
+
+.send__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.send__title {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 140%;
+    margin-bottom: 1rem;
+}
+
+.send__text {
+    margin: 0;
+    margin-bottom: 2.8rem;
+    font-size: 1.6rem;
+    line-height: 160%;
+    opacity: 0.5;
+}
+
+.form__wrap:not(:last-child) {
+    margin-bottom: 1.6rem;
+}
+
+.form__input {
+    width: 45.4rem;
+    background: var(--white);
+    padding: 1.1rem 3rem;
+
+    color: var(--white);
+    font-size: 1.4rem;
+    line-height: 160%;
+    /* opacity: 0.25; */
+    border-radius: 5rem;
+    opacity: 0.8;
+}
+
+::placeholder {
+    color: var(--white);
+    font-size: 1.4rem;
+    line-height: 160%;
+    opacity: 0.8;
+}
+
+.send__btn {
+    margin-top: 3.2rem;
+}
