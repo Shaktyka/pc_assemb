@@ -202,25 +202,27 @@
         </div>
     </footer>
     <!-- Окно заявки на сборку -->
-    <section class="modal send">
-        <form class="form send__form" name="send-form">
-            <h1 class="send__title">Заявка на сборку ПК</h1>
-            <p class="send__text">Мы свяжемся с вами, чтобы обсудить детали заказа</p>
-            <div class="form__wrap">
-                <label class="visually-hidden" for="name">Ваше имя:</label>
-                <input class="form__input" id="name" name="name" type="text" placeholder="Как вас зовут" required>
-            </div>
-            <div class="form__wrap">
-                <label class="visually-hidden" for="phone">Номер телефона:</label>
-                <input class="form__input" id="phone" name="phone" type="text" placeholder="Номер телефона" required>
-            </div>
-            <div class="form__wrap">
-                <label class="visually-hidden" for="email">E-mail:</label>
-                <input class="form__input" id="email" name="email" type="text" placeholder="E-mail" required>
-            </div>
-            <button class="btn btn--red request send__btn" id="send-btn" type="submit">Отправить</button>
-        </form>
-    </section>
+    <div class="overlay">
+        <section class="modal send">
+            <form class="form send__form" name="send-form">
+                <h1 class="send__title">Заявка на сборку ПК</h1>
+                <p class="send__text">Мы свяжемся с вами, чтобы обсудить детали заказа</p>
+                <div class="form__wrap">
+                    <label class="visually-hidden" for="name">Ваше имя:</label>
+                    <input class="form__input" id="name" name="name" type="text" placeholder="Как вас зовут" required>
+                </div>
+                <div class="form__wrap">
+                    <label class="visually-hidden" for="phone">Номер телефона:</label>
+                    <input class="form__input" id="phone" name="phone" type="text" placeholder="Номер телефона" required>
+                </div>
+                <div class="form__wrap">
+                    <label class="visually-hidden" for="email">E-mail:</label>
+                    <input class="form__input" id="email" name="email" type="text" placeholder="E-mail" required>
+                </div>
+                <button class="btn btn--red request send__btn" id="send-btn" type="submit">Отправить</button>
+            </form>
+        </section>
+    </div>
     <script src="js/index.js"></script>
 </body>
 </html>
