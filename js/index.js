@@ -32,8 +32,12 @@ const sendFormSubmitHandler = () => {
 };
 
 // Клик на оверлей:
-const overlayClickHandler = () => {
-    closeModal();
+const overlayClickHandler = (evt) => {
+    const target = evt.target;
+    
+    if (target.classList.contains('overlay')) {
+        closeModal();
+    }
 };
 
 // Подключение обработчиков:

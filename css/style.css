@@ -39,6 +39,7 @@
     --dark-gray: #121212;
     --modal-bg: #2C2C2C;
     --text-medium: 1.6rem;
+    --input-bg: #616161;
 }
 
 *, *::after, *::before {
@@ -564,15 +565,13 @@ button, input {
 
 .form__input {
     width: 45.4rem;
-    background: var(--white);
+    background-color: var(--input-bg);
     padding: 1.1rem 3rem;
 
     color: var(--white);
     font-size: 1.4rem;
     line-height: 160%;
-    /* opacity: 0.25; */
     border-radius: 5rem;
-    opacity: 0.8;
 }
 
 ::placeholder {
