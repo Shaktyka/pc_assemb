@@ -38,6 +38,7 @@
     --red-gradient: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
     --dark-gray: #121212;
     --modal-bg: #2C2C2C;
+    --text-medium: 1.6rem;
 }
 
 *, *::after, *::before {
@@ -100,7 +101,7 @@ button, input {
     background: var(--violet-gradient);
     border-radius: 5rem;
 
-    font-size: 1.6rem;
+    font-size: var(--text-medium);
     line-height: 150%;
     color: var(--white);
 }
@@ -126,6 +127,25 @@ button, input {
         clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.align-center {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.align-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-start-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 /* Header */
@@ -173,7 +193,7 @@ button, input {
 }
 
 .menu__link {
-    font-size: 1.6rem;
+    font-size: var(--text-medium);
     line-height: 150%;
 }
 
@@ -233,7 +253,7 @@ button, input {
 }
 
 .timer__unit {
-    font-size: 1.6rem;
+    font-size: var(--text-medium);
     line-height: 140%;
     opacity: 0.4;
 }
@@ -273,7 +293,7 @@ button, input {
 
 .about__text {
     max-width: 63.6rem;
-    font-size: 1.6rem;
+    font-size: var(--text-medium);
     line-height: 160%;
 }
 
@@ -304,7 +324,7 @@ button, input {
 .process__subtitle {
     max-width: 41.1rem;
     margin: 0;
-    font-size: 1.6rem;
+    font-size: var(--text-medium);
     line-height: 160%;
     opacity: 0.5;
     margin-bottom: 8rem;
@@ -392,10 +412,13 @@ button, input {
     align-items: center;
 }
 
-.specialist__pic {
-    display: block;
+.specialist__pic-wrap {
+    display: flex;
     max-width: 19rem;
+    width: 19rem;
+    height: 19rem;
     margin-bottom: 4rem;
+    border-radius: 50px;
 }
 
 .specialist__name {
@@ -406,9 +429,10 @@ button, input {
 }
 
 .specialist__role {
-    font-size: 1.6rem;
+    font-size: var(--text-medium);
     line-height: 160%;
     opacity: 0.8;
+    margin: 0;
     margin-bottom: 3rem;
 }
 
@@ -432,7 +456,7 @@ button, input {
 }
 
 .send-request__text {
-    font-size: 1.6rem;
+    font-size: var(--text-medium);
     line-height: 160%;
     opacity: 0.5;
     margin-bottom: 4.5rem;
@@ -518,13 +542,13 @@ button, input {
 .send__text {
     margin: 0;
     margin-bottom: 2.8rem;
-    font-size: 1.6rem;
+    font-size: var(--text-medium);
     line-height: 160%;
     opacity: 0.5;
 }
 
 .form__wrap:not(:last-child) {
-    margin-bottom: 1.6rem;
+    margin-bottom: var(--text-medium);
 }
 
 .form__input {
