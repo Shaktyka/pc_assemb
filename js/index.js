@@ -1,4 +1,5 @@
 // Переменные:
+const body = document.body;
 const headerRequestBtn = document.querySelector('.header__request');
 const heroRequestBtn = document.querySelector('.hero__request');
 const sendRequestBtn = document.querySelector('.send-request__btn');
@@ -9,6 +10,7 @@ const closeModalBtn = overlay.querySelector('.modal__close');
 
 // Открывает модалку:
 const openModal = () => {
+    body.style.overflowY = 'hidden';
     overlay.classList.add('show');
     
 };
@@ -16,6 +18,7 @@ const openModal = () => {
 // Закрывает модалку:
 const closeModal = () => {
     sendForm.reset();
+    body.style.overflowY = 'auto';
     overlay.classList.remove('show');
 };
 
