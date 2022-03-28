@@ -5,6 +5,7 @@ const sendRequestBtn = document.querySelector('.send-request__btn');
 
 const overlay = document.querySelector('.overlay');
 const sendForm = overlay.querySelector('.send__form');
+const closeModalBtn = overlay.querySelector('.modal__close');
 
 // Открывает модалку:
 const openModal = () => {
@@ -40,9 +41,15 @@ const overlayClickHandler = (evt) => {
     }
 };
 
+// Закрыть модалку по кнопке:
+const closeModalBtnClickHandler = () => {
+    closeModal();
+};
+
 // Подключение обработчиков:
 sendForm.addEventListener('submit', sendFormSubmitHandler);
 headerRequestBtn.addEventListener('click', requestBtnClickHandler);
 heroRequestBtn.addEventListener('click', requestBtnClickHandler);
 sendRequestBtn.addEventListener('click', requestBtnClickHandler);
 overlay.addEventListener('click', overlayClickHandler);
+closeModalBtn.addEventListener('click', closeModalBtnClickHandler);

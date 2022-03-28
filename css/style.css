@@ -123,6 +123,13 @@ button, input {
     color: var(--white);
 }
 
+.btn--service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+
 .btn--red {
     background: var(--red-gradient);
 }
@@ -657,6 +664,16 @@ button, input {
     width: 70rem;
     padding: 9rem 9.4rem;
     background-color: var(--modal-bg);
+}
+
+.modal__close {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    opacity: 0.5;
 }
 
 .show {
