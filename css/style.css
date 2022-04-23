@@ -135,7 +135,7 @@ button, input {
 }
 
 .btn--transparent {
-    border: 1px solid #FFFFFF;
+    border: 0.1rem solid #FFFFFF;
     background: none;
 }
 
@@ -278,7 +278,7 @@ button, input {
 }
 
 .hero__title {
-    max-width: 740px;
+    max-width: 74rem;
     font-weight: 700;
     font-size: 6.4rem;
     line-height: 140%;
@@ -341,31 +341,31 @@ button, input {
     margin: 0 auto;
 
     align-items: center;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .course-button__wrap {
     display: flex;
     flex-shrink: 0;
-    margin-right: 81px;
+    margin-right: 8.1rem;
 }
 
 .course__request {
     padding: 1rem 3rem;
     line-height: 1.15;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .course__counter {
-    min-width: 251px;
-    margin-right: 81px;
+    min-width: 25.1rem;
+    margin-right: 8.1rem;
 }
 
 .course__counter-line {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .course__counter-line, 
@@ -377,7 +377,7 @@ button, input {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 279px;
+    max-width: 27.9rem;
 }
 
 .course__number {
@@ -405,27 +405,27 @@ progress[value],
 progress:not([value]) {
     appearance: none;
     width: 100%;
-    margin: 5px 0;
+    margin: 0.5rem 0;
 }
 
 progress::-webkit-progress-bar {
     background: #FFFFFF;
-    height: 6px;
+    height: 0.6rem;
 }
 
 progress::-webkit-progress-value {
     background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
-    height: 6px;
+    height: 0.6rem;
 }
 
 progress {
     background: #FFFFFF;
-    height: 6px;
+    height: 0.6rem;
 }
 
 progress::-moz-progress-value {
     background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
-    height: 6px;
+    height: 0.6rem;
 }
 
 /* Чем мы занимаемся */
@@ -569,7 +569,7 @@ progress::-moz-progress-value {
     content: '';
     position: absolute;
     background-image: url('../img/line.png');
-    width: 86px;
+    width: 8.6rem;
     height: 100%;
     background-repeat: no-repeat;
     left: 50%;
@@ -579,7 +579,7 @@ progress::-moz-progress-value {
 .program-line {
     display: flex;    
     justify-content: space-between;
-    width: 750px;
+    width: 75rem;
 }
 
 .program-line__content:nth-child(n) {
@@ -588,13 +588,13 @@ progress::-moz-progress-value {
 
 .program-line__content:nth-child(2n) {
     text-align: left;
-    margin-top: 76px;
+    margin-top: 7.6rem;
 }
 
 .program__image {
     margin: 0 auto;
-    width: 90px;
-    margin-bottom: 76px;
+    width: 9rem;
+    margin-bottom: 7.6rem;
 }
 
 .program__header {
@@ -605,18 +605,18 @@ progress::-moz-progress-value {
 }
 
 .program__description {
-    max-width: 410px;
+    max-width: 41rem;
     text-align: center;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 160%;
     color: #FFFFFF40;
-    margin: 30px auto 80px auto;
+    margin: 3rem auto 8rem auto;
 }
 
 .program-line__content {
-    width: 304px;
-    height: 115px;
+    width: 30.4rem;
+    height: 11.5rem;
 }
 
 .program-line__descr {
@@ -633,14 +633,14 @@ progress::-moz-progress-value {
 .program-line__title {
     cursor: pointer;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 160%;
     color: #FFFFFF40;
 }
 
 .program-line__descr {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 160%;
 }
 
@@ -766,7 +766,7 @@ progress::-moz-progress-value {
     width: 19rem;
     height: 19rem;
     margin-bottom: 4rem;
-    border-radius: 50px;
+    border-radius: 5rem;
 }
 
 .specialist__name {
