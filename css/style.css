@@ -201,6 +201,7 @@ button, input {
     min-height: 96rem;
 
     margin: 0 auto;
+    margin-bottom: 10rem;
     padding: 4rem 11rem 4rem 8rem;
     background-image: url('../img/main-screen__bgc.jpeg');
     background-repeat: no-repeat;
@@ -330,6 +331,101 @@ button, input {
 
 .hero .request {
     display: inline-block;
+}
+
+/* Курс */
+
+.course__wrap {
+    display: flex;
+    max-width: 113.8rem;
+    margin: 0 auto;
+
+    align-items: center;
+    font-size: 16px;
+}
+
+.course-button__wrap {
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 81px;
+}
+
+.course__request {
+    padding: 1rem 3rem;
+    line-height: 1.15;
+    font-size: 16px;
+}
+
+.course__counter {
+    min-width: 251px;
+    margin-right: 81px;
+}
+
+.course__counter-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.course__counter-line, 
+.course__progress-label {
+    color: #FFFFFF40;
+}
+
+.course__progress-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 279px;
+}
+
+.course__number {
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.course__progress {
+    width: 100%;
+}
+
+.course__progress-element {
+    width: 100%;
+}
+
+.course__progress-minmax {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF40;
+}
+
+progress,
+progress[value],
+progress:not([value]) {
+    appearance: none;
+    width: 100%;
+    margin: 5px 0;
+}
+
+progress::-webkit-progress-bar {
+    background: #FFFFFF;
+    height: 6px;
+}
+
+progress::-webkit-progress-value {
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    height: 6px;
+}
+
+progress {
+    background: #FFFFFF;
+    height: 6px;
+}
+
+progress::-moz-progress-value {
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    height: 6px;
 }
 
 /* Чем мы занимаемся */
